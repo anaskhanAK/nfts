@@ -14,32 +14,42 @@ const Details = () => {
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    backgroundAttachment: 'fixed',
+                    backgroundSize: 'cover'
                 }}
             >
-                <Typography variant="h3" gutterBottom sx={{ color: 'white', backgroundColor: '#FF5B5080', p: 1 }}>
+                <Typography variant="h3" gutterBottom sx={{ color: 'white', backgroundColor: '#FF5B5080', p: 1, fontFamily: 'poppins, sans-serif', fontWeight: '600' }}>
                     <strong>Item Details</strong>
                 </Typography>
             </Box>
             <Box sx={{ p: 4, }}>
-                <Typography variant="h4" gutterBottom sx={{ color: 'white', p: 2 }}>
+                <Typography variant="h4" gutterBottom sx={{ color: 'white', p: 2, fontFamily: 'poppins, sans-serif', fontWeight: '600', }}>
                     <span style={{ color: '#FF5B50' }}>Discover</span> NFT in Details
                 </Typography>
             </Box>
             <Grid container spacing={2}>
-                <Grid item xs={12} sm={6} sx={{ display: 'flex', justifyContent: 'center', mt:3 }}>
-                    <img src='nftcard.png' alt='card' style={{maxWidth:'500px', maxHeight:'300px' }} />
 
+                <Grid data-aos="zoom-in" item xs={12} sm={6} sx={{ display: 'flex', justifyContent: 'center', mt: 3 }}>
+                    <img src='nftcard.png' alt='card' style={{
+                        maxWidth: '500px', maxHeight: '300px', border: '1px solid #5A5757',
+                        boxShadow: '4px 4px 4px 0px #56565640'
+                    }} />
                 </Grid>
+
                 <Grid item xs={12} sm={6}>
                     <Paper sx={{
                         backgroundColor: '#151515',
                         p: 2,
                         m: 2,
-                        mx:6
+                        mx: 6,
+                        border: '1px solid #5A5757',
+                        boxShadow: '4px 4px 4px 0px #56565640'
                     }}>
                         <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
                             <Box sx={{ width: '50%' }}>
-                                <Typography variant='h6' sx={{ color: 'white', mx: 3 }}> astronauta 1 NFT</Typography>
+                                <Typography variant='h6' sx={{ color: 'white', mx: 3, fontFamily: 'poppins, sans-serif', fontWeight: '600' }}> astronauta 1 NFT</Typography>
                             </Box>
                             <Box sx={{ width: '50%', textAlign: 'end' }}>
                                 <IconButton>
@@ -47,7 +57,7 @@ const Details = () => {
                                 </IconButton>
                             </Box>
                         </Box>
-                        <Typography variant='subtitle1' sx={{ color: '#FFFFFF', mx: 3 }}>
+                        <Typography variant='subtitle1' sx={{ color: '#FFFFFF', mx: 3, fontFamily: 'poppins, sans-serif', fontWeight: '300' }}>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore distinctio at nobis saepe, molestiae a, dicta similique.
                         </Typography>
                         <Grid container sx={{ display: 'flex', justifyContent: 'center', }}>
@@ -127,7 +137,7 @@ const Details = () => {
                     </Paper>
                 </Grid>
             </Grid>
-        </React.Fragment>
+        </React.Fragment >
     )
 }
 

@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 
 
@@ -83,11 +83,11 @@ function Navebar() {
                             open={Boolean(anchorElNav)}
                             onClose={handleCloseNavMenu}
                             sx={{
-                                display: { xs: 'block', md: 'none' },
+                                display: { xs: 'block', md: 'none', },
                             }}
                         >
                             <MenuItem onClick={handleHomeClick}>
-                                <Typography textAlign="center"> Home </Typography>
+                                <Typography textAlign="center" > Home </Typography>
                             </MenuItem>
                             <MenuItem onClick={handleTokenClick}>
                                 <Typography textAlign="center"> Token </Typography>
@@ -110,50 +110,53 @@ function Navebar() {
                     <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
                         <Button
                             onClick={handleHomeClick}
-                            sx={{ my: 1, color: 'white', display: 'block', textTransform: 'capitalize' }}
+                            sx={{ my: 1, color: 'white', display: 'block', textTransform: 'capitalize', fontFamily: 'poppins, sans-serif', fontWeight: '400', fontSize: '16px', ':hover': { color: '#FF5B50' } }}
                         >
                             Home
                         </Button>
                         <Button
                             onClick={handleTokenClick}
-                            sx={{ my: 1, color: 'white', display: 'block', textTransform: 'capitalize' }}
+                            sx={{ my: 1, color: 'white', display: 'block', textTransform: 'capitalize', fontFamily: 'poppins, sans-serif', fontWeight: '400', fontSize: '16px', ':hover': { color: '#FF5B50' } }}
                         >
                             Token
                         </Button>
                         <Button
                             onClick={handleExploreClick}
-                            sx={{ my: 1, color: 'white', display: 'block', textTransform: 'capitalize' }}
+                            sx={{ my: 1, color: 'white', display: 'block', textTransform: 'capitalize', fontFamily: 'poppins, sans-serif', fontWeight: '400', fontSize: '16px', ':hover': { color: '#FF5B50' } }}
                         >
                             Explore
                         </Button>
                         <Button
                             onClick={handleAssetsClick}
-                            sx={{ my: 1, color: 'white', display: 'block', textTransform: 'capitalize' }}
+                            sx={{ my: 1, color: 'white', display: 'block', textTransform: 'capitalize', fontFamily: 'poppins, sans-serif', fontWeight: '400', fontSize: '16px', ':hover': { color: '#FF5B50' } }}
                         >
                             Assets
                         </Button>
                         <Button
                             onClick={handleRoadMapClick}
-                            sx={{ my: 1, color: 'white', display: 'block', textTransform: 'capitalize' }}
+                            sx={{ my: 1, color: 'white', display: 'block', textTransform: 'capitalize', fontFamily: 'poppins, sans-serif', fontWeight: '400', fontSize: '16px', ':hover': { color: '#FF5B50' } }}
                         >
                             RoadMap
                         </Button>
                         <Button
                             onClick={handleRafflesClick}
-                            sx={{ my: 1, color: 'white', display: 'block', textTransform: 'capitalize' }}
+                            sx={{ my: 1, color: 'white', display: 'block', textTransform: 'capitalize', fontFamily: 'poppins, sans-serif', fontWeight: '400', fontSize: '16px', ':hover': { color: '#FF5B50' } }}
                         >
                             Raffles
                         </Button>
                         <Button
                             variant="contained"
                             sx={{
-                                width: "200px",
+                                width: "180px",
                                 height: '45px',
                                 my: 1,
                                 ml: 4,
                                 textTransform: 'capitalize',
                                 backgroundColor: '#FF5B50',
-                                borderRadius: '12px'
+                                borderRadius: '12px',
+                                fontFamily: 'poppins, sans-serif',
+                                fontWeight: '400',
+                                fontSize: '16px',
                             }}
                         >Conect Wallet</Button>
                     </Box>

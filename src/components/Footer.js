@@ -32,8 +32,9 @@ const Footer = () => {
                 <Divider sx={{ backgroundColor: 'white' }} />
                 <Box>
                     <Grid container spacing={0} sx={{ display: 'flex', justifyContent: 'center' }}>
-                        <Grid item sx={{ py: 6, minWidth: '480px' }} xs>
-                            <Typography gutterBottom variant="subtitle1" component="div" sx={{ color: 'white', textAlign: 'center', m: 2 }}>
+                        {/* left side of footer */}
+                        <Grid item sx={{ py: 6, minWidth: '480px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} >
+                            <Typography gutterBottom variant="subtitle1" component="div" sx={{ color: 'white', textAlign: 'center', m: 2, fontFamily: 'Poppins, sans-serif', fontWeight: '600', }}>
                                 stay in the loop
                                 <span style={{ color: '#FF5B50' }}> get latest insights</span>
                             </Typography>
@@ -44,60 +45,71 @@ const Footer = () => {
                                     style={{
                                         width: '300px',
                                         height: '32px'
+                                        , fontFamily: 'Poppins, sans-serif',
+                                        fontWeight: '400',
+                                        paddingLeft: '10px',
                                     }}
                                 />
-                                <Button variant='contained' sx={{backgroundColor:'#FF5B50'}}> send</Button>
+                                <Button variant='contained' sx={{ backgroundColor: '#FF5B50', fontFamily: 'Poppins, sans-serif', fontWeight: '600', }}> send</Button>
                             </Box>
                         </Grid>
+
                         <Divider orientation="vertical" sx={{ backgroundColor: 'white' }} flexItem />
+
+                        {/* right side of footer  */}
                         <Grid item sx={{ display: 'flex', justifyContent: 'space-between' }} xs={6} container>
-                            <Grid item sx={{ width: '260px', textAlign: 'center', p: 1 }}>
-                                <Typography gutterBottom variant="subtitle1" component="div" sx={{ color: '#FF5B50', textAlign: 'center', m: 1 }}>
+                            <Grid item sx={{ width: '150px', textAlign: 'center', p: 1 }}>
+                                <Typography gutterBottom variant="subtitle1" component="div" sx={{ fontFamily: 'Poppins, sans-serif', fontWeight: '600', color: '#FF5B50', textAlign: 'center', m: 1 }}>
                                     Heading 1
                                 </Typography>
-                                <Button sx={{ width: '200px', color: 'white' }}>Option</Button>
-                                <Button sx={{ width: '200px', color: 'white' }}>Option</Button>
-                                <Button sx={{ width: '200px', color: 'white' }}>Option</Button>
-                                <Button sx={{ width: '200px', color: 'white' }}>Option</Button>
+                                <Button sx={{ width: '150px', ':hover': { background: '#FF5B50' }, color: 'white', fontFamily: 'Poppins, sans-serif', fontWeight: '400', }}>Option</Button>
+                                <Button sx={{ width: '150px', ':hover': { background: '#FF5B50' }, color: 'white', fontFamily: 'Poppins, sans-serif', fontWeight: '400', }}>Option</Button>
+                                <Button sx={{ width: '150px', ':hover': { background: '#FF5B50' }, color: 'white', fontFamily: 'Poppins, sans-serif', fontWeight: '400', }}>Option</Button>
+                                <Button sx={{ width: '150px', ':hover': { background: '#FF5B50' }, color: 'white', fontFamily: 'Poppins, sans-serif', fontWeight: '400', }}>Option</Button>
                             </Grid>
-                            <Grid item sx={{ width: '260px', textAlign: 'center', p: 1 }}>
-                                <Typography gutterBottom variant="subtitle1" component="div" sx={{ color: '#FF5B50', textAlign: 'center', m: 1 }}>
+
+                            <Grid item sx={{ width: '150px', textAlign: 'center', p: 1 }}>
+                                <Typography gutterBottom variant="subtitle1" component="div" sx={{ color: '#FF5B50', fontFamily: 'Poppins, sans-serif', fontWeight: '600', textAlign: 'center', m: 1 }}>
                                     Heading 2
                                 </Typography>
-                                <Button sx={{ width: '200px', color: 'white' }}>Option</Button>
-                                <Button sx={{ width: '200px', color: 'white' }}>Option</Button>
-                                <Button sx={{ width: '200px', color: 'white' }}>Option</Button>
-                                <Button sx={{ width: '200px', color: 'white' }}>Option</Button>
+                                <Button sx={{ width: '150px', ':hover': { background: '#FF5B50' }, color: 'white', fontFamily: 'Poppins, sans-serif', fontWeight: '400', }}>Option</Button>
+                                <Button sx={{ width: '150px', ':hover': { background: '#FF5B50' }, color: 'white', fontFamily: 'Poppins, sans-serif', fontWeight: '400', }}>Option</Button>
+                                <Button sx={{ width: '150px', ':hover': { background: '#FF5B50' }, color: 'white', fontFamily: 'Poppins, sans-serif', fontWeight: '400', }}>Option</Button>
+                                <Button sx={{ width: '150px', ':hover': { background: '#FF5B50' }, color: 'white', fontFamily: 'Poppins, sans-serif', fontWeight: '400', }}>Option</Button>
                             </Grid>
-                            <Grid item sx={{ width: '260px', textAlign: 'center', p: 1 }}>
-                                <Typography gutterBottom variant="subtitle1" component="div" sx={{ color: '#FF5B50', textAlign: 'center', m: 1 }}>
+
+                            <Grid item sx={{ width: '150px', textAlign: 'center', p: 1 }}>
+                                <Typography gutterBottom variant="subtitle1" component="div" sx={{ fontFamily: 'Poppins, sans-serif', fontWeight: '600', color: '#FF5B50', textAlign: 'center', m: 1 }}>
                                     Heading 3
                                 </Typography>
-                                <Button sx={{ width: '200px', color: 'white' }}>Option</Button>
-                                <Button sx={{ width: '200px', color: 'white' }}>Option</Button>
-                                <Button sx={{ width: '200px', color: 'white' }}>Option</Button>
-                                <Button sx={{ width: '200px', color: 'white' }}>Option</Button>
+                                <Button sx={{ width: '150px', ':hover': { background: '#FF5B50' }, color: 'white', fontFamily: 'Poppins, sans-serif', fontWeight: '400', }}>Option</Button>
+                                <Button sx={{ width: '150px', ':hover': { background: '#FF5B50' }, color: 'white', fontFamily: 'Poppins, sans-serif', fontWeight: '400', }}>Option</Button>
+                                <Button sx={{ width: '150px', ':hover': { background: '#FF5B50' }, color: 'white', fontFamily: 'Poppins, sans-serif', fontWeight: '400', }}>Option</Button>
+                                <Button sx={{ width: '150px', ':hover': { background: '#FF5B50' }, color: 'white', fontFamily: 'Poppins, sans-serif', fontWeight: '400', }}>Option</Button>
                             </Grid>
                         </Grid>
+
                     </Grid>
                 </Box>
             </Box>
+
+            {/* copyright box  */}
             <Box sx={{ display: 'flex' }}>
-                <Box sx={{ width: '50%', p: 2, color: "white" }}>
+                <Box sx={{ width: '50%', p: 2, color: "white", fontFamily: 'Poppins, sans-serif', fontWeight: '500' }}>
                     © All Rights Reserved
                 </Box>
                 <Box sx={{ width: '50%', display: 'flex', justifyContent: 'end' }}>
                     <IconButton>
-                        <img src='Facebook.png' alt='icon' style={{ width: '35px' }} />
+                        <img src='Facebook.png' alt='icon' style={{ width: '32px' }} />
                     </IconButton>
                     <IconButton>
-                        <img src='linkediN.png' alt='icon' style={{ width: '35px' }} />
+                        <img src='linkediN.png' alt='icon' style={{ width: '32px' }} />
                     </IconButton>
                     <IconButton>
-                        <img src='Twitter.png' alt='icon' style={{ width: '35px' }} />
+                        <img src='Twitter.png' alt='icon' style={{ width: '32px' }} />
                     </IconButton>
                     <IconButton>
-                        <img src='Youtube.png' alt='icon' style={{ width: '35px' }} />
+                        <img src='Youtube.png' alt='icon' style={{ width: '32px' }} />
                     </IconButton>
                     <IconButton>
                         <img src='Mail.png' alt='icon' style={{ width: '35px' }} />

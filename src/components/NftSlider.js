@@ -1,5 +1,5 @@
 import React from 'react'
-import { Carousel } from '@mantine/carousel'
+import { Carousel } from '@mantine/carousel';
 
 const NftSlider = () => {
     return (
@@ -11,6 +11,7 @@ const NftSlider = () => {
                 slideGap={{ base: 0, sm: 'md' }}
                 loop
                 align="start"
+                style={{ width: '100%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'scroll', backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
                 <Carousel.Slide>
                     <img src='slide1.png' alt='avatar' style={{ padding: '5px' }} />
