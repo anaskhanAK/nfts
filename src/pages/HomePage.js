@@ -4,7 +4,15 @@ import NftSlider from '../components/NftSlider'
 import Conust from '../components/Conust'
 import HowItWorks from '../components/HowItWorks'
 import Utility from '../components/Utility'
-import NftCards from '../components/NftCards'
+import ExploreCards from '../components/ExploreCards'
+
+const revolvingAnimation = {
+    animation: 'revolve 25s linear infinite',
+    '@keyframes revolve': {
+        from: { transform: 'rotate(0deg)' },
+        to: { transform: 'rotate(360deg)' },
+    },
+};
 
 export const HomePage = () => {
     document.title = "NFTs - Home"
@@ -27,8 +35,8 @@ export const HomePage = () => {
                     backgroundPosition: 'center',
                 }}
             >
-                <Grid item sx={{ p: 2 }}>
-                    <img src='badge.png' alt='g' />
+                <Grid item sx={{ ...revolvingAnimation }} >
+                    <img src='./nft-pic.png' alt='g' style={{ width: '100%' }} />
                 </Grid>
 
                 <Grid item xs={8} container sx={{ p: 7 }}>
@@ -103,7 +111,14 @@ export const HomePage = () => {
             </Box>
 
             <Box></Box>
-            <NftCards size={4} />
+            {/* <NftCards size={4} /> */}
+
+            <Box sx={{ display: 'flex', justifyContent: 'center', my: 5 }}>
+                <Typography gutterBottom variant="h4" component="div" sx={{ color: 'white', fontFamily: 'poppins, sans-serif' }}>
+                    <strong> Explore <span style={{ color: '#FF5B50' }}>New NFTs</span></strong>
+                </Typography>
+            </Box>
+            <ExploreCards limit={4} />
 
             <Box sx={{ py: 4 }}>
                 <HowItWorks />

@@ -67,7 +67,7 @@ const TokenCard = () => {
                                 type='email'
                                 placeholder='E-Mail'
                                 style={{
-                                    width: '300px',
+                                    // width: '300px',
                                     height: '32px'
                                     , border: '1px solid #FFFFFF',
                                     background: 'none',
@@ -78,7 +78,7 @@ const TokenCard = () => {
                                     fontWeight: '300'
                                 }}
                             />
-                            <Button variant='contained' sx={{ backgroundColor: '#FF5B50', }}> <img src='./Vector.png' /> </Button>
+                            <Button variant='contained' sx={{ backgroundColor: '#FF5B50', }}> <img src='./Vector.png' alt='Vector' /> </Button>
 
                         </Box>
 

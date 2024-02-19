@@ -18,7 +18,7 @@ const Footer = () => {
     };
     return (
         <React.Fragment>
-            <Box sx={{ backgroundColor: '#151515' }}>
+            <Box sx={{ backgroundColor: '#151515', mt: 8 }}>
                 <Box sx={{ display: 'flex' }}>
                     <Box sx={{ width: '50%', p: 1, }}>
                         <img src='nfts_logo.png' alt='NFTs logo' />
@@ -33,7 +33,7 @@ const Footer = () => {
                 <Box>
                     <Grid container spacing={0} sx={{ display: 'flex', justifyContent: 'center' }}>
                         {/* left side of footer */}
-                        <Grid item sx={{ py: 6, minWidth: '480px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} >
+                        <Grid item xs={12} md={3} sx={{ backgroundColor: '#151515', py: 6, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} >
                             <Typography gutterBottom variant="subtitle1" component="div" sx={{ color: 'white', textAlign: 'center', m: 2, fontFamily: 'Poppins, sans-serif', fontWeight: '600', }}>
                                 stay in the loop
                                 <span style={{ color: '#FF5B50' }}> get latest insights</span>
@@ -41,12 +41,11 @@ const Footer = () => {
                             <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                                 <input
                                     type='email'
-                                    placeholder='anaskhankin1999@gmail.com'
+                                    placeholder='ENTER YOUR EMAIL HERE'
                                     style={{
-                                        width: '300px',
                                         height: '32px'
                                         , fontFamily: 'Poppins, sans-serif',
-                                        fontWeight: '400',
+                                        fontWeight: '500',
                                         paddingLeft: '10px',
                                     }}
                                 />
@@ -57,8 +56,8 @@ const Footer = () => {
                         <Divider orientation="vertical" sx={{ backgroundColor: 'white' }} flexItem />
 
                         {/* right side of footer  */}
-                        <Grid item sx={{ display: 'flex', justifyContent: 'space-between' }} xs={6} container>
-                            <Grid item sx={{ width: '150px', textAlign: 'center', p: 1 }}>
+                        <Grid item sx={{ display: 'flex', justifyContent: 'space-between' }} xs={12} md={6} container>
+                            <Grid item xs={6} md={3} sx={{ textAlign: 'center', p: 1 }}>
                                 <Typography gutterBottom variant="subtitle1" component="div" sx={{ fontFamily: 'Poppins, sans-serif', fontWeight: '600', color: '#FF5B50', textAlign: 'center', m: 1 }}>
                                     Heading 1
                                 </Typography>
@@ -68,7 +67,7 @@ const Footer = () => {
                                 <Button sx={{ width: '150px', ':hover': { background: '#FF5B50' }, color: 'white', fontFamily: 'Poppins, sans-serif', fontWeight: '400', }}>Option</Button>
                             </Grid>
 
-                            <Grid item sx={{ width: '150px', textAlign: 'center', p: 1 }}>
+                            <Grid item xs={6} md={3} sx={{ textAlign: 'center', p: 1 }}>
                                 <Typography gutterBottom variant="subtitle1" component="div" sx={{ color: '#FF5B50', fontFamily: 'Poppins, sans-serif', fontWeight: '600', textAlign: 'center', m: 1 }}>
                                     Heading 2
                                 </Typography>
@@ -78,7 +77,7 @@ const Footer = () => {
                                 <Button sx={{ width: '150px', ':hover': { background: '#FF5B50' }, color: 'white', fontFamily: 'Poppins, sans-serif', fontWeight: '400', }}>Option</Button>
                             </Grid>
 
-                            <Grid item sx={{ width: '150px', textAlign: 'center', p: 1 }}>
+                            <Grid item xs={6} md={3} sx={{ textAlign: 'center', p: 1 }}>
                                 <Typography gutterBottom variant="subtitle1" component="div" sx={{ fontFamily: 'Poppins, sans-serif', fontWeight: '600', color: '#FF5B50', textAlign: 'center', m: 1 }}>
                                     Heading 3
                                 </Typography>
@@ -95,10 +94,10 @@ const Footer = () => {
 
             {/* copyright box  */}
             <Box sx={{ display: 'flex' }}>
-                <Box sx={{ width: '50%', p: 2, color: "white", fontFamily: 'Poppins, sans-serif', fontWeight: '500' }}>
+                <Box sx={{ width: '100%', p: 2, color: "white", fontFamily: 'Poppins, sans-serif', fontWeight: '500' }}>
                     © All Rights Reserved
                 </Box>
-                <Box sx={{ width: '50%', display: 'flex', justifyContent: 'end' }}>
+                <Box sx={{ width: '100%', display: 'flex', justifyContent: 'end' }}>
                     <IconButton>
                         <img src='Facebook.png' alt='icon' style={{ width: '32px' }} />
                     </IconButton>
